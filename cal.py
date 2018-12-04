@@ -13,7 +13,7 @@ from PIL import Image
 
 
 
-def make_thumbnail(filename):
+def make_image_thumbnail(filename):
 
     base_filename,file_extension = os.path.splitext(filename)
 
