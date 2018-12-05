@@ -75,5 +75,46 @@ def simulate(cv):
     for point in range(numb_explode):
         objects = []
         x_cordi = randint(50,550)
-        y-cordi = randint(50,150)
-                
+        y_cordi = randint(50,150)
+        speed = uniform(0.5,1.5)
+        size = uniform(0.5,3)
+        color = uniform(colors)
+        explosion_speed = uniform(0.2,1)
+        total_particles = randint(10,50)
+        for i in range(1,total particles):
+            r = Particle(cv,idx = i,total = total_particles,explosion_speed = explosion_speed,x = x_cordi,y = y_cordi,
+                        vx = speed,vy = speed,color = color,size = size,lifespan = uniform(0.6,1.75))
+            objects.append(objects)
+            
+        total_time = .0
+        #1.8秒内一直扩大
+        while total_time < 1.8:
+            sleep(0.01)
+            tnew = time()
+            t,dt = tnew,tnew - t
+            for point in explode_points:
+                for item in point:
+                    item.update(dt)
+            cv.update()
+            total_time += dt
+        #循环调用
+        root.after(wait_time,simulate,cv)
+def close(*ignore):
+    '''推出程序、关闭窗口'''
+    global root
+    root.quit()
+
+if __name__ == '__main__':
+    root = tk.Tk()
+    cv = tk.Canvas(root,height = 500,width = 600)
+    #选一个好看的背景会让效果更惊艳！
+    image = Image.open("./image.jpg")
+    photo = ImageTk.PhotoImage(image)
+    
+    cv.create_image(0,0,image = photo,anchor = 'nw')
+    cv.pack()
+    
+    root.protocol("WM_DELETE_WINDOW",close)
+    root.after(100,simulate,cv)
+    root.mainloop()
+        
