@@ -139,7 +139,7 @@ def simulate(cv):
 
     wait_time = randint(10,100)
 
-    numb_expode = randint(6,10)
+    numb_explode = randint(6,10)
 
     #创建一个所有粒子同时扩大的二维列表
 
@@ -155,7 +155,7 @@ def simulate(cv):
 
         size = uniform(0.5,3)
 
-        color = uniform(colors)
+        color = choice(colors)
 
         explosion_speed = uniform(0.2,1)
 
