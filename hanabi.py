@@ -70,4 +70,10 @@ def simulate(cv):
     t = time()
     explode_points = []
     wait_time = randint(10,100)
+    numb_expode = randint(6,10)
+    #创建一个所有粒子同时扩大的二维列表
+    for point in range(numb_explode):
+        objects = []
+        x_cordi = randint(50,550)
+        y-cordi = randint(50,150)
                 
