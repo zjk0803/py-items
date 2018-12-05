@@ -167,11 +167,13 @@ def simulate(cv):
 
                         vx = speed,vy = speed,color = color,size = size,lifespan = uniform(0.6,1.75))
 
-            objects.append(objects)
-
+            objects.append(r)
+            
             
 
-        total_time = .0
+        explode_points.append(objects)    
+
+    total_time = .0
 
         #1.8秒内一直扩大
 
