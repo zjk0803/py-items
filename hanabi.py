@@ -8,7 +8,7 @@ from random import choice,uniform,randint
 
 from math import sin,cos,radians
 
-
+2
 
 #模拟重力
 
