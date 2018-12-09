@@ -2,7 +2,7 @@
 """
 Created on Tue Dec  4 21:09:38 2018
 
-@author: 抖抖飞
+@author: pyer
 """
 
 import golb
