@@ -7,7 +7,6 @@ from time import time,sleep
 from random import choice,uniform,randint
 
 from math import sin,cos,radians
-fsd
 
 
 #模拟重力
