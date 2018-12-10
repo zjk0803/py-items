@@ -25,3 +25,9 @@ def parse_Page(html,headers):
       name = data.xpath('.//h3')
       #print(len(name))
       #验证码链接
+      src = data.xpath('.//div/img/src')
+      #print(len(src))
+      count = 0
+      for i in range(len(name)):
+        #验证码图片名
+        
