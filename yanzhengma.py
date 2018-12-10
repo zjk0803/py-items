@@ -1,2 +1,7 @@
 import requests
-df 
+import os
+import time
+from lxml import etree
+
+def get_Page(url,headers):
+  
