@@ -29,5 +29,17 @@ def parse_Page(html,headers):
       #print(len(src))
       count = 0
       for i in range(len(name)):
-        #验证码图片名
+        #验证码图片文件名
+        filename = name[i].text + '.jpg'
+        img_url = 'https://captcha.com/' + src[i]
+        response = requests.get(img_url,headers = headers)
+        if response.status_code == 200:
+          image = response.content
+          with open(filename,'wb') as f:
+            f.write(image)
+            count += 1
+            print('保存第{}张脸验证码成功'.format(count))
+            time.sleep(1)
+def 
+        
         
