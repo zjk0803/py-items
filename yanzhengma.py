@@ -20,4 +20,8 @@ def parse_Page(html,headers):
   else:
     os.mkdir(file)
     os.chdir(file)
-   
+    for data in datas:
+      #验证码名称
+      name = data.xpath('.//h3')
+      #print(len(name))
+      #验证码链接
