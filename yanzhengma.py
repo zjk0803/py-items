@@ -40,6 +40,12 @@ def parse_Page(html,headers):
             count += 1
             print('保存第{}张脸验证码成功'.format(count))
             time.sleep(1)
-def 
+def main():
+  url = 'https://captcha.com/captcha-examples.html?cst=corg'
+  headers = {usewegefhedghef}
+  html = get_Page(html,headers)
+  parse_page(html,headers)
+if __name__ == '__main__':
+  main()
         
         
