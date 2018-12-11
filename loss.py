@@ -54,6 +54,7 @@ max(0, 4.3) + max(0, 0.9)
 5.2 (High loss as very wrong prediction)
 
 
+
 #交叉熵损失/负对数似然：
 import numpy as np
 predictions = np.array([[0.25,0.25,0.25,0.25],
