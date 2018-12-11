@@ -31,3 +31,26 @@ def mae(predictions, targets):
 mae_val = mae(y_hat, y_true)
 print ("mae error is: " + str(mae_val))
 
+#平均偏差误差（mean bias error）
+
+
+#分类损失
+
+#Hinge Loss/多分类 SVM 损失
+## 1st training example
+max(0, (1.49) - (-0.39) + 1) + max(0, (4.21) - (-0.39) + 1)
+max(0, 2.88) + max(0, 5.6)
+2.88 + 5.6
+8.48 (High loss as very wrong prediction)
+## 2nd training example
+max(0, (-4.61) - (3.28)+ 1) + max(0, (1.46) - (3.28)+ 1)
+max(0, -6.89) + max(0, -0.82)
+0 + 0
+0 (Zero loss as correct prediction)
+## 3rd training example
+max(0, (1.03) - (-2.27)+ 1) + max(0, (-2.37) - (-2.27)+ 1)
+max(0, 4.3) + max(0, 0.9)
+4.3 + 0.9
+5.2 (High loss as very wrong prediction)
+
+
