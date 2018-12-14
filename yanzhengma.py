@@ -37,6 +37,8 @@ def parse_Page(html,headers):
           image = response.content
           with open(filename,'wb') as f:
             f.write(image)
+            
+  
             count += 1
             print('保存第{}张脸验证码成功'.format(count))
             time.sleep(1)
