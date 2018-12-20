@@ -17,5 +17,7 @@ a, b = b, a
         
         
 def func(a, b):
-  result = [b, a]         
+  result = [b, a]  
+  result = result
+        
         
