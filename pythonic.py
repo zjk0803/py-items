@@ -29,3 +29,4 @@ d = np.arange(10)
 print(d[0:5])        
         
 print(d.reshape(-1,1))
+print(d.reshape(2,3,2))
