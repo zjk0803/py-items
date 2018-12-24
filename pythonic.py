@@ -28,3 +28,4 @@ c = np.array([[1,2,3,4],[5,6,7,8],[9,10,11,12]])
 d = np.arange(10)
 print(d[0:5])        
         
+print(d.reshape(-1,1))
