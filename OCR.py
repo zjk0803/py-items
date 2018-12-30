@@ -8,3 +8,5 @@ text = pytesseract.image_to_string(Image.open('E://figures/other/poems.jpg'))
 
 print(text)
 
+
+
