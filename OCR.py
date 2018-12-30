@@ -1,3 +1,5 @@
+#图片识别
+
 import pytesseract
 from PIL import Image
 
@@ -5,3 +7,4 @@ pytesseract.pytesseract.tesseract_cmd = 'C://Program Files (x86)/Tesseract-OCR/t
 text = pytesseract.image_to_string(Image.open('E://figures/other/poems.jpg'))
 
 print(text)
+
