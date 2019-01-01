@@ -49,5 +49,13 @@ def main():
   parse_page(html,headers)
 if __name__ == '__main__':
   main()
-        
+ 
+#随机生成验证码
+import random,string
+str1 = "0123456789"
+str2 = string.ascii_letters
+str3 = str1+str2
+ma1 = random.sample(str3,6)
+mal = ''.join(mal)
+print(mal)
         
