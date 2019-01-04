@@ -3,6 +3,7 @@ for i in range(len(lst)):
 
 for i in lst:
   print(i)
+        
 
         
         
