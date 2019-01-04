@@ -7,6 +7,7 @@ for i in lst:
 
         
         
+        
 temp = a
 a = b
 b = temp
