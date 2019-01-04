@@ -36,6 +36,7 @@ print(d.reshape(2,3,2))
         
         
         
+        
 import numpy as np
 
 
