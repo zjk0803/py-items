@@ -119,7 +119,7 @@ def trainThread():
         WordsLib.extend(wordlist)
         trainLabelInput.append(1)   #非垃圾邮件标记为1     
 
-    VocabList = createWordsLib(trainData)#生成了一个无重复单词的单词库
+    VocabList = createWordsLib(trainData)  #生成了一个无重复单词的单词库
 
 
 
