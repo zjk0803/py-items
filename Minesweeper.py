@@ -1,4 +1,3 @@
-
 #扫雷游戏窗口
 class_name = "TMain"
 title_name = "Minesweeper Arbiter "
