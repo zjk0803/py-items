@@ -18,3 +18,4 @@ if hwnd:
    print(str(left)+' '+str(right)+' '+str(top)+' '+str(bottom))
 else:
    print("未找到窗口")
+   
