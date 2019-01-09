@@ -18,3 +18,4 @@ if hwnd:
 else:
    print("未找到窗口")
    
+   
