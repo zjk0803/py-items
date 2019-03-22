@@ -32,3 +32,4 @@ for image_file in glob.glob("*.jpg"):
     thumnail_file = make_image_thumbnail(image_file)
 
 print(f"A thumbnail for {image_file} was save as {thumbnail_file}")
+
